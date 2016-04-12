@@ -30,6 +30,27 @@ def  elaboraReq1():
             'var2=' + var2  +\
 	    '</H3></body></html>'
         return stringHtml
+    
+
+
+@app.route("/elaboraInput")
+@app.route("/static/elaboraInput")
+def elaboraInput():
+     #  variabile var1, non la stringa 'var1'
+	var1 = request.args.get('firstname')
+	#  variabile var2, non la stringa 'var2'
+	var2 = request.args.get('lastname')
+
+        stringHtml= '<html><body>' + \
+            '<H3>' +request.query_string +'</H3><br/>' +\
+            '<H3>' + 'valore dei parametri ' +\
+           'firstname=' + var1 +\
+              ' '+\
+            'lastname=' + var2  +\
+	    '</H3></body></html>'
+        return stringHtml
+    
+     
 
 
 if __name__ == "__main__":
