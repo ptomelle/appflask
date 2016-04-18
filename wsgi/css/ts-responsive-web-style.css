@@ -1,0 +1,12 @@
+.ts-product-container{
+    text-align:center;
+}
+.ts-product-container .ts-product{
+    display: inline-block;
+    height: 250px;
+    margin: 10px 40px;
+    width: 200px;
+    background: #eee;
+    font-weight: bold;
+}
+
