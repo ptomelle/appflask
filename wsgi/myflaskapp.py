@@ -45,7 +45,7 @@ def inserisciAlunno ():
 
 @app.route("/insertAlunnoPOST/" , methods=["POST"])  # metodo POST diverso dal GET
 def inserisciAlunnPOST():
-    # spedizione in formato JSON ,   request.json è il dizionario mandato
+    # spedizione in formato JSON ,   request.json e' il dizionario mandato
     numeroReg =  request.json['numeroReg']
     nome =       request.json['nome']
     cognome =    request.json['cognome']
@@ -75,4 +75,4 @@ def alunnoByNumeroReg():
     
 if __name__ == "__main__":
     #app.debug=True
-    app.run(port=80)
+    app.run(port=4002)
