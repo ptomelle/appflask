@@ -46,7 +46,7 @@ var APP = {
                         contentType: 'application/json',
                         crossDomain: true,   
                         type: "json",
-                        data: JSON.stringify({"numeroReg": contenuto}),
+                        data: JSON.stringify({ numeroReg : contenuto}),
                         dataType: "json",
                         success: function (data) {
                             contenuto = data.numeroReg + " " +
